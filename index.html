@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Agustina L. Perez Puissant">
+
+    <title>Crea tu cuenta</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+    <main>
+        <div class="login">
+            <form>
+                <h2>Crea tu cuenta</h2>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <div class="input-validate">
+                        <input id="name" onblur="validateField(this)" />
+                        <img class="img-validate" />
+                    </div>
+                    <label class="validate" hidden>Error</label>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-validate">
+                        <input id="email" type="email" onblur="validateField(this)" />
+                        <img class="img-validate" />
+                    </div>
+                    <label class="validate">Error</label>
+                </div>
+                <div class="form-group">
+                    <label for="passwd">Clave</label>
+                    <div class="input-validate">
+                        <input id="passwd" type="password" onblur="validateField(this)" />
+                        <img class="img-validate" />
+                    </div>
+                    <label class="validate">Error</label>
+                </div>
+                <div class="form-group">
+                    <label for="checkedPasswd">Confirme su clave</label>
+                    <div class="input-validate">
+                        <input id="checkedPasswd" type="password" onblur="validateField(this)" />
+                        <img class="img-validate" />
+                    </div>
+                    <label class="validate">Error</label>
+                </div>
+                <div class="form-submit">
+                    <input id="send" type="button" onclick="enviar()" value="ENVIAR" />
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
